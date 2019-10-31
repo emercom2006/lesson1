@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Калькулятор курса валют</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		var euro = "67"; // Курс Евро
+		var usd = "62"; // Курс USD
+
+		var euro_rub = prompt ("Сколько вы хотите обменять рублей в евро?"); // Запрашиваем необходимую сумму для обмена
+		euro_rub = parseInt(euro_rub); // Переводим строки в цифры
+		var c_euro = euro_rub/euro; // Вычисляем отношение сколько обменять к валюте
+		alert ("По курсу 1 euro = " + euro + " руб., вы получите " + c_euro.toFixed(2) + " euro"); // Выводим итоговую информацию по омену
+
+
+		var usd_rub = prompt ("Сколько вы хотите обменять рублей в доллары?"); // Запрашиваем необходимую сумму для обмена
+		usd_rub = parseInt(usd_rub); // Переводим строки в цифры
+		var c_usd = usd_rub/usd; // Вычисляем отношение сколько обменять к валюте
+		alert ("По курсу 1 usd  =  " + usd + " руб., вы получите " + c_usd.toFixed(2) + " usd"); // Выводим итоговую информацию по омену
+
+	</script>
+
+
+</body>
+</html>
